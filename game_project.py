@@ -15,9 +15,9 @@ if User_answer == games[0]:
                 break
             else:
                 if user_choice > real_answer:
-                    print("Too high")
+                    print("Your guess is Too high")
                 else:
-                    print("Too low")
+                    print("Your guesss is Too low")
                 Remaining_attempts = maximum_attempt - attempts
                 print(f"Remaining attempts are {Remaining_attempts}. Try again")
                 attempts += 1
@@ -36,9 +36,9 @@ elif User_answer == games[1]:
             break
         else:
             if user_choice > real_answer:
-                print("Too high")
+                print(" Your guess is Too high")
             else:
-                print("Too low")
+                print(" Your guess is Too low")
             Remaining_attempts = maximum_attempt - attempts
             print(f"Remaining attempts are {Remaining_attempts}. Try again")
             attempts += 1
@@ -57,9 +57,9 @@ elif User_answer == games[2]:
             break
         else:
             if user_choice > real_answer:
-                print("Too high")
+                print("Your guess is Too high")
             else:
-                print("Too low")
+                print("Your guess is Too low")
             Remaining_attempts = maximum_attempt - attempts
             print(f"Remaining attempts are {Remaining_attempts}. Try again")
             attempts += 1
