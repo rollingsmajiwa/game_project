@@ -7,7 +7,7 @@ if User_answer == games[0]:
         user_choice = int(input("Enter your selected number:"))
         real_answer = random.randint(1, 100)
         attempts = 0
-        is_numrange = range(3)
+        is_numrange = range(5)
         for i in is_numrange:
             if user_choice == real_answer:
                 print("correct")
@@ -16,10 +16,26 @@ if User_answer == games[0]:
                 print("failed")
                 attempts += 1
             user_choice = int(input("Try again:"))
-            if attempts == 3:
+            if attempts == 5:
                 print(f"The answer is {real_answer}")
                 break
 elif User_answer == games[1]:
+    user_choice = int(input("Enter your selected number:"))
+    real_answer = random.randint(1, 100)
+    attempts = 0
+    is_numrange = range(7)
+    for i in is_numrange:
+        if user_choice == real_answer:
+            print("correct")
+            break
+        else:
+            print("failed")
+            attempts += 1
+            user_choice = int(input("Try again:"))
+            if attempts == 7:
+                print(f"The answer is {real_answer}")
+                break
+elif User_answer == games[2]:
     user_choice = int(input("Enter your selected number:"))
     real_answer = random.randint(1, 100)
     attempts = 0
